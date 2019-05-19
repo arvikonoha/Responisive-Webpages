@@ -1,0 +1,64 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family: monospace;
+  background: #0a090f;
+  line-height: 1.6rem;
+  font-size: 16px;
+}
+
+#form-box{
+  margin: 30px auto;
+  padding: 25px;
+  background: #c0cad1;
+  width: 30%;
+  border-radius: 10px;
+}
+
+#form-box h1{
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+#form-box p{
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#form-box label,#form-box input,#form-box select{
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+#form-box label,#form-box select{
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+
+#form-box input{
+  border: none;
+  width: 100%;
+  padding: 5px;
+}
+
+#form-box fieldset{
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+@media (max-width:780px){
+  #form-box{
+    width: 60%;
+  }
+}
+
+@media (max-width:415px){
+  #form-box{
+    width: 80%;
+  }
+}
