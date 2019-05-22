@@ -30,7 +30,7 @@ body{
   overflow: hidden;
 }
 
-#header img{
+#header #header-img{
   width: 40px;
   float: left;
 }
