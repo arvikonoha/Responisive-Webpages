@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./style/style.css">
+  <title>Node.js Intro</title>
+</head>
+<body>
+  <div class="container">
+    <nav id="navbar">
+      <div id="navbox">
+        <header>Node.js Intro</header>
+        <ul>
+          <li><a class="nav-link" href="#what_is_node.js">What is Node.js?</a></li>
+          <li><a class="nav-link" href="#why_node.js">Why Node.js?</a></li>
+          <li><a class="nav-link" href="#what_can_node.js_do">What can Node.js do?</a></li>
+          <li><a class="nav-link" href="#getting_started_with_node.js">Getting started with Node.js</a></li>
+          <li><a class="nav-link" href="#all_about_node_modules">What is Node.js</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section"><header id="what_is_node.js">
+        What is Node.js?
+      </header>
+      <ul>
+        <li>Node is an open source server environment</li>
+        <li>Node is free</li>
+        <li>Node runs on various platforms</li>
+        <li>Node usess javascript on the server</li>
+      </ul>
+      </section>
+      <section class="main-section"><header id="why_node.js">
+        Why Node.js?
+      </header>
+        <p>Normal function of node.js is to send the content of a file and send over the network.
+        </p>
+        <p>Here is how node.js does it</p>
+        <ol>
+          <li>Sends the task to computers file system</li>
+          <li>waits for the next request</li>
+          <li>when the computer is done with the task node return the file content</li>
+        </ol>
+        <p>node runs asynchronous,non-blocking, asynchronous programming which is memory efficient</p>
+      </section>
+      <section class="main-section"><header id="what_can_node.js_do">
+        What can Node.js do?
+      </header>
+      <ul>
+        <li>Change content on the web page</li>
+        <li>Create, open, read, write, delete files on the server</li>
+        <li>Add, delete , change data on the databases</li>
+      </ul>
+      </section>
+      <section class="main-section"><header id="getting_started_with_node.js">
+        Getting Started with Node.js
+      </header>
+        <p>Once node.js is installed on the system we can run out own server as follows...</p>
+        
+        <div class="code-box">
+          <code>
+          let http = require('http');<br>
+          http.createServer((req,res) => {<br>
+            res.writeHeader(200,{'Content-type':'text/html'});<br>
+            res.write('Hello there.');<br>
+            res.end();<br>
+          }).listen(8080);
+          </code>
+        </div>
+        <p>The above code uses the http module to create a server as per the following boilerplate.</p>
+      </section>
+      <section class="main-section"><header id="all_about_node_modules">
+        All about Node Modules
+      </header>
+      <p>Node modules are javascript libraries</p>
+      <p>You can include already existing library as follows:</p>
+        <div class="code-box">
+          <code>
+            let http = require('http');
+          </code>
+        </div>
+      <p>Your can create your own module as follows say 'Hello.js' as follows</p>
+        <div class="code-box">
+          <code>
+            exports.hello = "Hello mate!";
+          </code>
+        </div>
+      <p>Now that you,ve created your module you can import it in some other js file as follows: </p>
+        <div class="code-box">
+          <code>
+            let hello = require('./hello.js');
+          </code>
+        </div>
+      <p>Now lets use this module in our server</p>
+        <div class="code-box">
+          <code>
+            let http = require('http');<br>
+            let hello = require('./hello.js');<br>
+            http.createServer((req,res) => {
+              <br>
+              res.writeHeader(200,{'Content-type':'text/html'});<br>
+              res.write(hello.hello);<br>
+              res.end();<br>
+            }).listen(8080);
+        </code>
+        </div>
+      </section>
+      <section class="main-section">
+        <header id="reference">
+          Reference
+        </header>
+        <p>All the material here are borrowed from w3cschools</p>
+      </section>
+    </main>
+  </div>
+  <script src="./test.js"> </script>
+</body>
+</html>
