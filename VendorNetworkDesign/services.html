@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Welcome</title>
+</head>
+
+<body class="bg-light">
+  <header id="main-header" class="bg-light w-100 pd-10">
+    <div class="container">
+      <h1>Main Title <img class="hamberger" width="30px" height="30px" src="./images/hamberger.svg" alt="" srcset="">
+      </h1>
+      <nav class="hide pd-20">
+        <ul>
+          
+          <li class="ls-none"><a class="pd-20" href="#">Home</a></li>
+          <li class="ls-none"><a class="pd-20" href="#">Services</a></li>
+          <li class="ls-none"><a class="pd-20" href="#">Cart</a></li>
+          <li class="ls-none"><a class="pd-20" href="#logreg">Login | Register</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="clr"></div>
+  <section id="logreg-pop" class="gone flex-box jc-center ai-center flex-dir-col">
+    <img src="./images/close.svg" width="30px" alt="">
+    <div class="form-container">
+      <form action="" class="register">
+        <h2>Register with us</h2>
+        <label for="email">Enter your email</label>
+        <input type="email" id="email" name="email">
+        <label for="password">Enter your password</label>
+        <input type="password" id="password" name="password">
+        <label for="cpassword">Confirm your password</label>
+        <input type="password" id="cpassword">
+        <button type="submit">Register</button>
+        <p>If you already have an account<a href="#login"> press this.</a></p>
+      </form>
+      <form action="" class="login gone">
+        <h2>Log in to your account</h2>
+        <label for="email">Enter your email</label>
+        <input type="email" id="email" name="email">
+        <label for="password">Enter your password</label>
+        <input type="password" id="password" name="password">
+        <button type="submit">Login</button>
+        <p>Dont have an account<a href="#register"> press this.</a></p>
+      </form>
+    </div>
+  </section>
+  <header id="profile">
+    <div class="container">
+      <h2>Search the services</h2>
+    </div>
+  </header>
+  <section id="search-box" class="hide">
+    <div class="search-flex flex-box container">
+      <div class="search-box-title flex-dir-col flex-box">
+        <label for="keyword">Search by title</label>
+        <input type="text" id="keyword">
+      </div>
+      <div class="search-box-filter flex-dir-col flex-box">
+        <label for="filter">Filter your search</label>
+        <select name="filter" id="filter">
+          <option value="" disabled> Filter by categories </option>
+          <option value="Photographers">Photographers</option>
+          <option value="Musicals">Musicals</option>
+          <option value="Caterers">Caterers</option>
+          <option value="Decorators">Decorators</option>
+          <option value="" disabled> Filter by location </option>
+          <option value="Mysore">Mysore</option>
+          <option value="Bangalore">Bangalore</option>
+          <option value="Udupi">Udupi</option>
+          <option value="Mangalore">Mangalore</option>
+        </select>
+      </div>
+    </div>
+    <div class="search-flex flex-box container">
+      <div class="search-box-dates flex-box">
+        <div class="from flex-box flex-dir-col">
+          <label for="from ">Search by title</label>
+          <input type="date" id="from" name="from">
+        </div>
+        <div class="to flex-dir-col flex-box">
+          <label for="to ">Search by title</label>
+          <input type="date" id="to" name="to">
+        </div>
+      </div>
+      <div class="search-box-sort flex-dir-col flex-box">
+        <label for="sort">Sort your search</label>
+        <select name="sort" id="sort">
+          <option value="" disabled> Sort the search </option>
+          <option value="Popular">Popular</option>
+          <option value="Price-low-to-high">Price-low-to-high</option>
+          <option value="Price-high-to-low">Price-high-to-low</option>
+        </select>
+      </div>
+    </div>
+  </section>
+  <div class="view-more">
+    <p>Toggle options to search</p>
+    <img width="80px" src="./images/seemore.svg" alt="">
+  </div>
+  <section id="search-results">
+    <div class="search-results-flex flex-box container">
+      <div class="search-results-box">
+        <div class="search-description card-shadow pd-10">
+          <h3>Generic services</h3>
+          <p class="location">Location</p>
+        </div>
+        <div class="more-details flex-dir-col ai-center flex-box w-100">
+          <h4>Services offered</h4>
+          <ul>
+            <li class="pd-10 card-shadow ls-none">Photo - 20,000</li>
+            <li class="pd-10 card-shadow ls-none">Photo + Video - 30,000</li>
+            <a href="/profile.html">
+              <li class="pd-10">Visit the profile <img src="./images/SVG/Arraow 2.svg" alt=""> </li>
+            </a>
+          </ul>
+        </div>
+      </div>
+      <div class="search-results-box">
+        <div class="search-description card-shadow pd-10">
+          <h3>Generic services</h3>
+          <p class="location">Location</p>
+        </div>
+        <div class="more-details flex-dir-col ai-center flex-box w-100">
+          <h4>Services offered</h4>
+          <ul>
+            <li class="pd-10 card-shadow ls-none">Photo - 20,000</li>
+            <li class="pd-10 card-shadow ls-none">Photo + Video - 30,000</li>
+            <a href="/profile.html">
+              <li class="pd-10">Visit the profile <img src="./images/SVG/Arraow 2.svg" alt=""> </li>
+            </a>
+          </ul>
+        </div>
+      </div>
+      <div class="search-results-box">
+        <div class="search-description card-shadow pd-10">
+          <h3>Generic services</h3>
+          <p class="location">Location</p>
+        </div>
+        <div class="more-details flex-dir-col ai-center flex-box w-100">
+          <h4>Services offered</h4>
+          <ul>
+            <li class="pd-10 card-shadow ls-none">Photo - 20,000</li>
+            <li class="pd-10 card-shadow ls-none">Photo + Video - 30,000</li>
+            <a href="/profile.html">
+              <li class="pd-10">Visit the profile <img src="./images/SVG/Arraow 2.svg" alt=""> </li>
+            </a>
+          </ul>
+        </div>
+      </div>
+      <div class="search-results-box">
+        <div class="search-description card-shadow pd-10">
+          <h3>Generic services</h3>
+          <p class="location">Location</p>
+        </div>
+        <div class="more-details flex-dir-col ai-center flex-box w-100">
+          <h4>Services offered</h4>
+          <ul>
+            <li class="pd-10 card-shadow ls-none">Photo - 20,000</li>
+            <li class="pd-10 card-shadow ls-none">Photo + Video - 30,000</li>
+            <a href="/profile.html">
+              <li class="pd-10">Visit the profile <img src="./images/SVG/Arraow 2.svg" alt=""> </li>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="./scripts/main.js"></script>
+</body>
+
+</html>

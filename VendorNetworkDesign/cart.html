@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Welcome</title>
+</head>
+
+<body class="bg-light">
+  <header id="main-header" class="bg-light w-100 pd-10">
+    <div class="container">
+      <h1>Main Title <img class="hamberger" width="30px" height="30px" src="./images/hamberger.svg" alt="" srcset="">
+      </h1>
+      <nav class="hide pd-20">
+        <ul>
+          <li class="ls-none"><a class="pd-20" href="#">Home</a></li>
+          <li class="ls-none"><a class="pd-20" href="#">Services</a></li>
+          <li class="ls-none"><a class="pd-20" href="#">Cart</a></li>
+          <li class="ls-none"><a class="pd-20" href="#logreg">Login | Register</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="clr"></div>
+  <section id="logreg-pop" class="gone flex-box jc-center ai-center flex-dir-col">
+    <img src="./images/close.svg" width="30px" alt="">
+    <div class="form-container">
+      <form action="" class="register">
+        <h2>Register with us</h2>
+        <label for="email">Enter your email</label>
+        <input type="email" id="email" name="email">
+        <label for="password">Enter your password</label>
+        <input type="password" id="password" name="password">
+        <label for="cpassword">Confirm your password</label>
+        <input type="password" id="cpassword">
+        <button type="submit">Register</button>
+        <p>If you already have an account<a href="#login"> press this.</a></p>
+      </form>
+      <form action="" class="login gone">
+        <h2>Log in to your account</h2>
+        <label for="email">Enter your email</label>
+        <input type="email" id="email" name="email">
+        <label for="password">Enter your password</label>
+        <input type="password" id="password" name="password">
+        <button type="submit">Login</button>
+        <p>Dont have an account<a href="#register"> press this.</a></p>
+      </form>
+    </div>
+  </section>
+  <header id="profile">
+    <div class="container">
+      <h2>Your cart</h2>
+    </div>
+  </header>
+  <section id="cart">
+    <ul class="cart-items container">
+      <li class="cart-item ls-none card-shadow pd-20">
+        <img src="./images/topRight.svg" alt="" srcset="">
+        <img src="./images/topLeft.svg" alt="" srcset="">
+        <img src="./images/bottomRight.svg" alt="" srcset="">
+        <img src="./images/bottomLeft.svg" alt="" srcset="">
+        <h3 class="orange-bb-2">Vendor title</h3>
+        <br>
+        <h4 class="orange-bb-2">Services requested</h4>
+        <ul class="cart-services container">
+          <li class="cart-service ls-none card-shadow">Photo - 20000 <img style="width: 10px;position: absolute;top: 5px;
+          right: 5px;" src="./images//close-black.svg" alt=""></li>
+          <li class="cart-service ls-none card-shadow">Photo + Video - 20000 <img style="width: 10px;position: absolute;top: 5px;
+          right: 5px;" src="./images//close-black.svg" alt=""></li>
+        </ul>
+      </li>
+      <li class="cart-item ls-none card-shadow pd-20">
+
+        <img src="./images/topRight.svg" alt="" srcset="">
+        <img src="./images/topLeft.svg" alt="" srcset="">
+        <img src="./images/bottomRight.svg" alt="" srcset="">
+        <img src="./images/bottomLeft.svg" alt="" srcset="">
+        <h3 class="orange-bb-2">Vendor title</h3>
+        <br>
+        <h4 class="orange-bb-2">Services requested</h4>
+        <ul class="cart-services container">
+          <li class="cart-service ls-none card-shadow">Photo - 20000 <img style="width: 10px;position: absolute;top: 5px;
+          right: 5px;" src="./images//close-black.svg" alt=""></li>
+          <li class="cart-service ls-none card-shadow">Photo + Video - 20000 <img style="width: 10px;position: absolute;top: 5px;
+          right: 5px;" src="./images//close-black.svg" alt=""></li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+  <script src="./scripts/main.js"></script>
+</body>
+
+</html>

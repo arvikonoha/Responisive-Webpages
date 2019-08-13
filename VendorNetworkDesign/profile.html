@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Profile</title>
+</head>
+
+<body class="bg-light">
+  <header id="main-header" class="bg-light w-100 pd-10">
+    <div class="container">
+      <h1>Main Title <img class="hamberger" width="30px" height="30px" src="./images/hamberger.svg" alt="" srcset="">
+      </h1>
+      <nav class="hide pd-20">
+        <ul>
+          <li class="ls-none"><a class="pd-20" href="#">Home</a></li>
+          <li class="ls-none"><a class="pd-20" href="#">Services</a></li>
+          <li class="ls-none"><a class="pd-20" href="#">Cart</a></li>
+          <li class="ls-none"><a class="pd-20" href="#logreg">Login | Register</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section id="logreg-pop" class="gone flex-box jc-center ai-center flex-dir-col">
+    <img src="./images/close.svg" width="30px" alt="">
+    <div class="form-container">
+      <form action="" class="register">
+        <h2>Register with us</h2>
+        <label for="email">Enter your email</label>
+        <input type="email" id="email" name="email">
+        <label for="password">Enter your password</label>
+        <input type="password" id="password" name="password">
+        <label for="cpassword">Confirm your password</label>
+        <input type="password" id="cpassword">
+        <button type="submit">Register</button>
+        <p>If you already have an account<a href="#login"> press this.</a></p>
+      </form>
+      <form action="" class="login gone">
+        <h2>Log in to your account</h2>
+        <label for="email">Enter your email</label>
+        <input type="email" id="email" name="email">
+        <label for="password">Enter your password</label>
+        <input type="password" id="password" name="password">
+        <button type="submit">Login</button>
+        <p>Dont have an account<a href="#register"> press this.</a></p>
+      </form>
+    </div>
+  </section>
+  <header id="profile">
+    <div class="container pd-10">
+      <h2>Vender Profile</h2>
+    </div>
+  </header>
+  <div class="profile-container">
+    <div class="profile-description card-shadow">
+      <img src="./images/topRight.svg" width="25px" alt="" srcset="">
+      <img src="./images/topLeft.svg" width="25px" alt="" srcset="">
+      <img src="./images/bottomRight.svg" width="25px" alt="" srcset="">
+      <img src="./images/bottomLeft.svg" width="25px" alt="" srcset="">
+      <div class="select-box bg-light">
+        <!-- <section>
+          <h3 class="pd-10">Categories <button class="edit-btn card-shadow">
+              <div class="edit-text">
+                Edit
+              </div class="edit-text">
+              <img width="20px" src="./images/edit.svg" alt="">
+            </button> </h3>
+          <ul class="categories">
+            <li class="card-shadow ls-none">
+              <img width="20px" src="./images/SVG/Asset 3.svg" alt="">
+              Photography
+              <img width="20px" src="./images/SVG/Asset 4.svg" alt="">
+            </li>
+            <li class="card-shadow ls-none">
+              <img width="20px" src="./images/SVG/Asset 3.svg" alt="">
+              Decorators
+              <img width="20px" src="./images/SVG/Asset 4.svg" alt="">
+            </li>
+          </ul>
+        </section> -->
+
+      </div>
+
+
+      <div class="clr"></div>
+      <section>
+        <h3 class="pd-10">About us <button class="edit-btn card-shadow">
+            <div class="edit-text">
+              Edit
+            </div class="edit-text">
+            <img width="20px" src="./images/edit.svg" alt="">
+          </button> </h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio velit possimus voluptatum, nesciunt,
+          dolores praesentium officiis excepturi iste ipsa ad veritatis consequatur, corrupti aspernatur fuga molestias
+          commodi saepe. Iure, at!</p>
+      </section>
+      <section>
+        <h3 class="pd-10">Gallery</h3>
+        <div class="gallery-flex flex-box pd-20">
+          <div class="gallery-box"></div>
+          <div class="gallery-box"></div>
+          <div class="gallery-box"></div>
+          <div class="gallery-box jc-center ai-center flex-box flex-dir-col card-shadow">
+            <div class="flex-box jc-center ai-center flex-dir-col">+</div>
+            <p>Add to the gallery</p>
+          </div>
+        </div>
+      </section>
+      <section>
+
+        <h3 class="pd-10">Vendor details <button class="edit-btn card-shadow">
+            <div class="edit-text">
+              Edit
+            </div class="edit-text">
+            <img width="20px" src="./images/edit.svg" alt="">
+          </button> </h3>
+        <div class="profile-flex flex-box pd-10">
+          <div class="primary-box ai-center flex-box card-shadow">
+            <div class="heading flex-dir-col ai-center jc-center flex-box pd-10">
+              <h4>Email</h4>
+            </div>
+            generic@gmail.com
+          </div>
+          <div class="primary-box ai-center flex-box card-shadow">
+            <div class="heading flex-dir-col ai-center jc-center flex-box pd-10">
+              <h4>Phone</h4>
+            </div>
+            9829123217
+          </div>
+          <div class="secondary-box ai-center flex-box card-shadow">
+            <div class="heading flex-dir-col ai-center jc-center flex-box pd-10">
+              <h4>Address</h4>
+            </div>
+            The generic,
+            common road,
+            dreramville - 453234
+          </div>
+          <div class="secondary-box ai-center flex-box card-shadow">
+            <div class="heading flex-dir-col ai-center jc-center flex-box pd-10">
+              <h4>User Rating</h4>
+            </div>
+            <span class="rating">4.3</span>
+          </div>
+        </div>
+      </section>
+      <h3 class="pd-10">Vendor schedule</h3>
+      <ul class="schedule card-shadow">
+        <li class="ls-none">
+          <h4>Event title</h4>
+          <br>
+          <p class="card-shadow">From - 12/07/2018</p>
+
+          <p class="card-shadow">To - 12/07/2018</p>
+        </li>
+        <li class="ls-none">
+          <h4>Event title</h4>
+          <br>
+          <p class="card-shadow">From - 12/07/2018</p>
+
+          <p class="card-shadow">To - 12/07/2018</p>
+        </li>
+        <li class="ls-none">
+          <h4>Event title</h4>
+          <br>
+          <p class="card-shadow">From - 12/07/2018</p>
+
+          <p class="card-shadow">To - 12/07/2018</p>
+        </li>
+      </ul>
+      <section>
+        <h3 class="pd-10">User reviews</h3>
+        <ul class="reviews">
+          <li class="card-shadow ls-none">
+            <h4 class="orange-bb-2"> <img width="20px" src="./images/SVG/Asset 3.svg" alt=""> User Name <img
+                width="20px" src="./images/SVG/Asset 4.svg" alt=""></h4>
+            <br>
+            <p class="rate card-shadow">Rating - 4.2 <img width="20px" src="./images/SVG/star.svg" alt=""> </p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ab suscipit doloribus ducimus
+              expedita laudantium.</p>
+          </li>
+          <li class="card-shadow ls-none">
+            <h4 class="orange-bb-2"> <img width="20px" src="./images/SVG/Asset 3.svg" alt=""> User Name <img
+                width="20px" src="./images/SVG/Asset 4.svg" alt=""></h4>
+            <br>
+            <p class="rate card-shadow">Rating - 4.4 <img width="20px" src="./images/SVG/star.svg" alt=""> </p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ab suscipit doloribus ducimus
+              expedita laudantium.</p>
+          </li>
+          <li class="card-shadow ls-none">
+            <h4 class="orange-bb-2"> <img width="20px" src="./images/SVG/Asset 3.svg" alt=""> User Name <img
+                width="20px" src="./images/SVG/Asset 4.svg" alt=""></h4>
+            <br>
+            <p class="rate card-shadow">Rating - 4.1 <img width="20px" src="./images/SVG/star.svg" alt=""> </p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ab suscipit doloribus ducimus
+              expedita laudantium.</p>
+          </li>
+          <!-- <li style="width: 220px">
+            <p>Read more reviews...</p>
+          </li> -->
+        </ul>
+      </section>
+    </div>
+    <div class="profile-pic bg-light flex-box card-shadow">
+      <div class="img-box">
+        <img src="./images/card2.jpg" height="100%" alt="">
+      </div>
+      <section class="pd-20">
+        <h3 class="pd-10">Services offered <button class="edit-btn card-shadow">
+            <div class="edit-text">
+              Edit
+            </div class="edit-text">
+            <img width="20px" src="./images/edit.svg" alt="">
+          </button> </h3>
+        <ul class="categories">
+          <p>Press on the subcategory to add to the cart</p>
+          <br>
+          <li class="card-shadow ls-none">
+            <img width="80px" src="./images/SVG/Asset 2.svg" alt=""><br>
+            Photo - Rs.20000
+            <img src="./images/SVG/Arrow.svg" width="50px" alt="">
+            <br>
+            <img width="80px" src="./images/SVG/Asset 1.svg" alt="">
+          </li>
+          <br>
+          <li class="card-shadow ls-none">
+            <img width="80px" src="./images/SVG/Asset 2.svg" alt=""><br>
+            Photo + Video - Rs.35000 <img src="./images/SVG/Arrow.svg" width="50px" alt=""> <br>
+            <img width="80px" src="./images/SVG/Asset 1.svg" alt="">
+          </li>
+        </ul>
+      </section>
+    </div>
+    <h2 class="profile-title pd-20 card-shadow">
+      <img src="./images/topRight.svg" alt="" srcset="">
+      <img src="./images/bottomLeft.svg" alt="" srcset="">
+      Generic services<br>
+      <sub style="font-size: 15px;font-weight: normal">Location <br>
+        <!-- <button class="edit-btn card-shadow">
+          <div class="edit-text">
+            Edit
+          </div class="edit-text">
+          <img width="20px" src="./images/edit.svg" alt="">
+        </button> -->
+      </sub>
+  </div>
+  </h2>
+  <!-- <div class="edit-form flex-box jc-center ai-center">
+    <div class="edit-form-box">
+      <form class="pd-20">
+        <label class="orange-bb-2 w-100" for="description">Your basic details</label> -->
+  <!-- <ul class="categories">
+          <li>
+            <img width="150px" src="./images/SVG/Asset 2.svg" alt=""><br>
+            Photo - Rs.20000
+            <img src="./images/SVG/Arrow.svg" width="100px" alt="">
+            <br>
+            <img width="150px" src="./images/SVG/Asset 1.svg" alt="">
+            <img src="./images/close-black.svg" alt="">
+          </li>
+          <li>
+            <img width="150px" src="./images/SVG/Asset 2.svg" alt=""><br>
+            Photo + Video - Rs.35000 <img src="./images/SVG/Arrow.svg" width="100px" alt=""> <br>
+            <img width="150px" src="./images/SVG/Asset 1.svg" alt="">
+            <img src="./images/close-black.svg" alt="">
+          </li>
+        </ul>
+      -->
+  <!-- <label class="orange-bb-2 w-100" for="subcategories">Add a new subcategory</label>
+        <div id="subcategories" class="fields">
+          <label class="orange-bb-2 w-100" for="subcategory">Subcategory</label>
+          <input type="text" id="subcategory">
+          <label class="orange-bb-2 w-100" for="price">Price</label>
+          <input type="text" id="price">
+        </div> -->
+  <!-- <label class="orange-bb-2 w-100" for="subcategories">Add a new subcategory</label> -->
+  <!-- <div id="subcategories" class="fields">
+          <label class="orange-bb-2 w-100" for="email">Email</label>
+          <input type="email" id="email">
+          <label class="orange-bb-2 w-100" for="phone">Phone</label>
+          <input type="tel" id="phone"> -->
+  <!-- <label class="orange-bb-2 w-100" for="address">Address</label> -->
+  <!-- <input type="tel" id="address"> -->
+  <!-- <textarea class="pd-20" placeholder="Enter your address" name="description" id="description" cols="30" rows="10" class-"w-100"></textarea> -->
+  <!-- <label class="orange-bb-2 w-100" for="profile">Profile</label>
+          <div class="file-box">
+            Update your profile picture
+            <input type="file" name="profile-pic" id="profile" class="file-input">
+          </div>
+        </div>
+
+
+
+        <input type="submit" value="Update" class="update-submit">
+      </form>
+      <img src="./images/close-dark.svg" alt="">
+    </div>
+  </div> -->
+  <script src="./scripts/main.js"></script>
+</body>
+</body>
+
+</html>
